@@ -1,0 +1,17 @@
+{
+  "name": "tercera_entrega_final",
+  "version": "1.0.0",
+  "description": "SearchBook es una página web pensada para que los usuarios encuentren, de manera facil, los lugares donde comprar o leer de forma gratuita el libro que deseen.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Camila Paredes",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}

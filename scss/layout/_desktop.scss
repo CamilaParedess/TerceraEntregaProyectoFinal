@@ -1,0 +1,39 @@
+/* media query desktop */
+@media only screen and (min-width: 1024px){
+    @import url(../utilities/_mixin.scss);
+
+
+    .contenedorPaginaLibro{
+        display: grid;
+        grid-template-areas: "img1 img2 img3 img4"
+                             "img5 img6 img7 img8"
+                             "img9 img10 img11 img12";
+        justify-content: space-around;
+    }
+
+    .contenedorPaginaPopular{
+        display: grid;
+        grid-template-areas: "img1 img2 img3 img4";
+    }
+
+
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav{
+        @include dis-flex-jus-center;
+    }
+    
+    nav ul li{
+        display: flex;
+        align-items: center;
+        border: 0 rgba(255, 255, 255, 0) solid;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+}
+}

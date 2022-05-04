@@ -1,0 +1,76 @@
+/* media query tablet */
+@media only screen and (min-width: 600px){
+    @import url(../utilities/_mixin.scss);
+
+
+    .mainIndex{
+        display: grid;
+        grid-template-areas: "tituloIndex tituloIndex"
+                             "parrafoIndex imgIndex"
+                             "parrafoIndex imgIndex";
+    }
+
+    .contenedorPaginaLibro{
+        display: grid;
+        grid-template-areas: "img1 img2 img3"
+                             "img4 img5 img6"
+                             "img7 img8 img9"
+                             "img10 img11 img12";
+        justify-content: space-around;
+    }
+
+    .contenedorPaginaPopular{
+        display: grid;
+        grid-template-areas: "img1 img2"
+                             "img3 img4";
+    }
+
+
+    img{
+        height: auto;
+        width: 100%;
+    }
+    
+    .imgIndex{
+        grid-area: imgIndex;
+        @include dis-flex-jus-center;
+        align-items: center;
+        margin: 1px 40px;
+        height: auto;
+    }
+
+
+    .tituloIndex{
+        grid-area: tituloIndex;
+    }
+
+    .parrafoIndex{
+        margin-bottom: 0px;
+        grid-area: parrafoIndex;
+        @include dis-flex-jus-center;
+        padding: 35px;
+        align-items: center;
+    }
+
+
+    .footerIndex{
+        margin-top: 300px;
+        margin-bottom: 20px;
+    }
+
+    h1{
+        display: flex;
+        justify-content: flex-start;
+        margin: 10px;
+    }
+    
+    .tituloLibros{
+        @include dis-flex-jus-center;
+        margin: 10px 10px;
+    }
+    
+    div a img{
+        height: 450px;
+    }
+    
+}
